@@ -1,0 +1,35 @@
+*{
+    background-color: #ffe9ce;
+}
+.titlu{
+    text-align:center;
+    color: #ffb5c2;
+    font-size: 42px;
+}
+
+table{
+    margin-left: 5em;
+}
+
+td{
+    color: #3777ff;
+    font-size: 30px;
+}
+
+.radio{
+    color:#ffbe86; 
+    font-size:22px;
+}
+
+.camp{
+    color:#ffbe86;
+    font-size:22px;
+}
+
+.buton{
+    font-size: 20px;
+    color: #3777ff;
+    border-color:black; 
+    border-width:medium;
+    margin-left: 14em;
+}

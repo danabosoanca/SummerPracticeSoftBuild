@@ -1,0 +1,20 @@
+-----------------------#1 : scoateti toate articolele scrise de Vasilica -----------------------
+
+DELETE posts FROM posts
+        INNER JOIN
+    users ON users.id_user = posts.id_user 
+WHERE
+    users.username = 'vasilica';
+
+
+
+-----------------------#2 : scoateti toate articolele scrise de pesoane sub 25 de ani -----------------------
+DELETE posts FROM posts
+        INNER JOIN
+    users ON users.id_user = posts.id_user 
+WHERE
+    users.age < 25;
+
+-----------------------#3 : dezactivati (status=2) articolele cu id_uri pare -----------------------
+UPDATE `posts` SET `status`=2 WHERE id_post%2 =0;
+

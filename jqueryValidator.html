@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca la mama acasă</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type=""
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyypCNdPQPql14PX0qbDSxE1tKkcE8PKGa9DalGZVmGasHqhUcsklVD0SDrUwyGN--Qlc&usqp=CAU">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <style>
+        .error{
+            color: red;
+            font-style: italic;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 class="titlu">Formular practică</h1>
+    <form method="post" action="inregistrare.php" id="registration">
+        <table>
+            <tr>
+                <td>
+                    <i class="far fa-user"></i>
+                    <b>Nume </b>
+                </td>
+                <td>
+                    <input class="camp" type="text" name="nume" placeholder="Nume" id="nume"> <b></b>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i class="far fa-user"></i>
+                    <b>Prenume</b>
+                </td>
+                <td>
+                    <input type="text" class="camp" name="prenume" placeholder="Prenume" id="prenume">
+                    <b></b>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <i class="fas fa-venus-mars"></i>
+                    <b>Gen</b>
+                </td>
+                <div class="gen">
+                    <td class="radio">
+                        <input type="radio" value="feminin" name="gen" id="feminin"> <b>Feminin</b>
+                        <input type="radio" value="masculin" name="gen" id="masculin"> <b>Masculin</b>
+                    </td>
+                </div>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <i class="fas fa-phone"></i>
+                    <b>Telefon</b>
+                </td>
+                <td>
+                    <input type="number" class="camp" name="telefon" placeholder="Telefon" id="telefon">
+                    <b></b>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i class="fas fa-at"></i>
+                    <b>Email</b>
+                </td>
+                <td>
+                    <input type="email" name="email" placeholder="Email" class="camp" id="email">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <i class="fas fa-university"></i>
+                    <b>An studiu</b>
+                </td>
+                <td>
+                    <select name="studiu" class="radio" id="studiu">
+                        <option value="1"></option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i class="fas fa-university"></i>
+                    <b>Facultate</b>
+                </td>
+                <td>
+                    <select name="facultate" class="radio" id="facultate">
+                        <option value="1"></option>
+                        <option value="2">Facultatea de Automatică și Calculatoare</option>
+                        <option value="3">Facultatea de Electrotehnică și Electroenergetică</option>
+                        <option value="4">Facultatea de Matematică și Informatică</option>
+                        <option value="5">Facultatea de Electronică, Telecomunicații și Tehnologii Informaționale
+                        </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr class="radio">
+                <td>
+                    <img src="https://img.icons8.com/material-outlined/32/000000/check-all.png" />
+                    <b>Practică online</b>
+                </td>
+                <div class="online">
+                <td>
+                    <input type="checkbox" name="online" value="1">
+                </td>
+                </div>
+            </tr>
+
+
+            <tr class="camp">
+                <td>
+                    <img src="https://img.icons8.com/material-sharp/32/000000/create-new.png" />
+                    <b>Temă practică</b></td>
+                <td>
+                    <textarea name="tema" rows="7" cols="40" placeholder="Temă practică" id="tema">
+                                </textarea>
+                </td>
+            </tr>
+
+            <tr class="camp">
+                <td>
+                    <img src="https://img.icons8.com/material-sharp/32/000000/create-new.png" />
+                    <b>Firmă practică</b></td>
+                <td>
+                    <textarea name="firma" rows="7" cols="40" placeholder="Firmă practică" id="firma">
+                                </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <br />
+                    <input type="submit" value="Înregistrare" class="buton" />
+                </td>
+
+                <br>
+            </tr>
+
+        </table>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="register.js"></script>
+
+</body>
+
+</html>
